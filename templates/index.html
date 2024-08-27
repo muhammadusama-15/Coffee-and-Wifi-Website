@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <img src="static/coffee.png", width="150px", height="200px">
+        <h1 class="text-body-emphasis">Coffee and Wifi</h1>
+        <p class="col-lg-8 mx-auto fs-5 text-muted">
+          If you are looking for a cafe with nice coffe and a good wifi, then you are at the right place.
+        </p>
+        <div class="d-inline-flex gap-2 mb-5">
+          <a class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button" href="{{url_for('all_cafes')}}">
+            View Cafes
+          </a>
+          <a class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button" href="{{url_for('add_cafe')}}">
+            Add Cafe
+          </a>
+        </div>
+      </div>
+{% endblock %}
